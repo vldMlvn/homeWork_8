@@ -1,7 +1,12 @@
 class Triangle extends Shape {
-    private String name="Трикутник";
+    private String name;
+
+    public String setName(String name) {
+        this.name = name;
+        return name;
+    }
     @Override
-    public void draw(){
-        System.out.println("Triangle name is- "+name);
+    public String getName(){
+       return setName("Трикутник");
     }
 }

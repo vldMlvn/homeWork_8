@@ -1,7 +1,13 @@
 class Rectangle extends Shape {
-    private String name= "Пряокутник";
+    private String name;
+
+    public String setName(String name) {
+        this.name = name;
+        return name;
+    }
+
     @Override
-    public void draw() {
-        System.out.println("Rectangle name is- "+name);
+    public String getName() {
+        return setName("Прямокутник");
     }
 }

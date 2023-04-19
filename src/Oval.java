@@ -1,7 +1,13 @@
 class Oval extends Shape {
-    private String name= "Овал";
+    private String name;
+
+    public String setName(String name) {
+        this.name = name;
+        return name;
+    }
+
     @Override
-    public void draw(){
-        System.out.println("Oval name is- "+name);
+    public String getName(){
+        return setName("Овал");
     }
 }
